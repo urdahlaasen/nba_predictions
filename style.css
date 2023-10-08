@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh; 
+    background-color: #00f9;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    width: 45vw;
+    background-color: #fff;
+    border-radius: 1rem;
+    list-style: none;
+
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: move;
+    transition: .3s ease;
+}
+
+li:nth-child(even) {
+    background-color: #eee8;
+}
+
+li:hover {
+    background-color: #00f2;
+    transform: scale(1.03);
+}
+
+/*Legger til active class med js */
+li:active {
+    background-color: #0f03;
+    transform: scale(1.03);
+    padding-bottom: .8rem;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.info {
+    margin-left: 1rem;
+}
+
+.info h2 {
+    font-size: 1.2rem;
+}
+
+.icon {
+    padding: 1rem;
+    transform: rotate(180deg);
+}
