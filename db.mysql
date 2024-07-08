@@ -1,7 +1,11 @@
-CREATE TABLE group (
+CREATE DATABASE nba_prediction;
+
+USE nba_prediction;
+
+CREATE TABLE p_group (
   gid int PRIMARY KEY auto_increment,
   groupname VARCHAR(255),
-  memberNO int,
+  memberNO int
 );
 
 CREATE TABLE users (
@@ -9,7 +13,7 @@ CREATE TABLE users (
   username VARCHAR(40),
   password VARCHAR(255),
   groupId INT,
-  FOREIGN KEY (groupId) REFERENCES group(GID)
+  FOREIGN KEY (groupId) REFERENCES p_group(GID)
 );
 
 CREATE TABLE teams (
