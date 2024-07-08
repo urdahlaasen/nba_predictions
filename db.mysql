@@ -26,3 +26,9 @@ CREATE TABLE teams (
   secondarycolor VARCHAR(30)
   );
 
+CREATE TABLE predictions (
+  pid int PRIMARY KEY auto_increment,
+  user int,
+  prediction VARCHAR(255),
+  FOREIGN KEY (user) REFERENCES users(uid)
+);
