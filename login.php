@@ -33,12 +33,12 @@
             <div class="input-group success">
                <label for="user">User:</label>
                <input type="user" id="user" name="user">
-               <span class="msg">Valid email</span>
+               <!--<span class="msg">Valid email</span>-->
             </div>
             <div class="input-group error">
                <label for="password">Password:</label>
                <input type="password" id="password" name="password">
-               <span class="msg">Incorrect password</span>
+               <!--<span class="msg">Incorrect password</span> -->
             </div>
             <button type="submit" class="login-button">Login</button>
         </form>

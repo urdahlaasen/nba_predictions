@@ -12,6 +12,7 @@ session_start();
   <script defer src="script2.js"></script>
 </head>
 <body>
+<div class="full-screen-container">
   
   <div class="container">
     <form id="sortable-form" action="submit.php" method="POST">    
@@ -56,7 +57,7 @@ session_start();
       <button type="submit">Submit</button>
     </form>
   </div>
- 
+ </div>
 </body>
 </html>
 
